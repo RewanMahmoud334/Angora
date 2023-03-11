@@ -1,0 +1,590 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --main-color: #f25454;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/* start nav section */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: var(--main-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link{
+    color: white;
+    transition: all 1s;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+.nav-link:hover{
+    color: var(--main-color);
+}
+
+
+/* start home section */
+
+
+
+.carousel-item1{
+    background-image: url(../images/images/slideshow-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item2{
+    background-image: url(../images/images/slideshow-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item3{
+    background-image: url(../images/images/slideshow-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.home-header{
+    font-size: 4.5rem;
+    color: white;
+    max-width: 500px;
+}
+
+.home-icon{
+    width: 30px;
+    height: 45px;
+    border: 1px solid white;
+    position: absolute;
+    bottom:10%;
+}
+
+.home-icon::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@keyframes icon {
+    0%{content: "";
+        top: 10%;
+    }
+
+    50%{
+        content: "";
+        top: 50%;
+    }
+
+    100%{
+        content: "";
+        top: 80%;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html{
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* start about section */
+
+.title-section h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+   
+}
+
+.title-section h2::before{
+    content: "A";
+    position: absolute;
+    font-size: 6.5rem;
+    font-weight: 700;
+    left: 50%;
+    bottom: -40%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0.07;
+
+}
+
+.title-section h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 5%;
+    height: 1px;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    transition: all 1s;
+}
+
+.title-section h2:hover::after{
+    width: 7%;
+}
+
+.title-section p{
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+
+.progress-bar1{
+    width: 80%;
+    background-color: var(--main-color);
+}
+
+.progress, .progress-stacked {
+    height: 5px;
+}
+
+.progress-p {
+    font-size: 0.9rem;
+    
+}
+.progress-bar2{
+    width: 95%;
+    background-color: var(--main-color);
+}
+.progress-bar3{
+    width: 85%;
+    background-color: var(--main-color);
+}
+.progress-bar4{
+    width: 70%;
+    background-color: var(--main-color);
+}
+
+
+/* start team section */
+
+
+.title-section2 h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+   
+}
+
+.title-section2 h2::before{
+    content: "o";
+    position: absolute;
+    font-size: 6.5rem;
+    font-weight: 700;
+    left: 50%;
+    bottom: -40%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0.07;
+
+}
+
+.title-section2 h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 5%;
+    height: 1px;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    transition: all 1s;
+}
+
+.title-section2 h2:hover::after{
+    width: 7%;
+}
+.title-section2 p{
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+figure img{
+    transition: all 1s;
+}
+
+figure:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+.layer-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:  rgba(242, 84, 84, 0.85);
+    opacity: 0;
+   transition: all 1s;
+}
+
+
+.content-team:hover .layer-img{
+    opacity: 1;
+}
+
+.content-team h5{
+    transition: all 1s;
+}
+
+.content-team:hover h5{
+    color: var(--main-color);
+}
+
+
+/* start team footer */
+
+.team-footer .but1{
+    background-color: var(--main-color);
+    border-color: transparent;
+    transition: all 1s;
+    
+    
+}
+
+.team-footer .but1 a{
+    color: white;
+}
+
+.team-footer .but1:hover{
+    background-color: #f38383;
+}
+
+
+/* start services section */
+
+
+
+.title-section3 h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+   
+}
+
+.title-section3 h2::before{
+    content: "S";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0.07;
+
+}
+
+.title-section3 h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 5%;
+    height: 1px;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    transition: all 1s;
+}
+
+.title-section3 h2:hover::after{
+    width: 7%;
+}
+.title-section3 p{
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+
+#services h3 i{
+color: var(--main-color);
+font-size: 1.5rem;
+}
+
+#services h3{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Poppins", sans-serif;
+ transition: all 1s;
+}
+#services h3:hover{
+    color: var(--main-color);
+}
+
+
+/* start client section */
+
+.title-section4 h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+   
+}
+
+.title-section4 h2::before{
+    content: "C";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0.07;
+
+}
+
+.title-section4 h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 5%;
+    height: 1px;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    transition: all 1s;
+}
+
+.title-section4 h2:hover::after{
+    width: 7%;
+}
+.title-section4 p{
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+
+.carousel-indicators [data-bs-target]{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-indent: 0;
+    
+   
+    
+}
+
+
+
+
+ 
+.curousel-p{
+    max-width:800px;
+    font-size: 2rem;
+}
+
+
+/* start contact section */
+
+
+.title-section5 h2{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+   
+}
+
+.title-section5 h2::before{
+    content: "G";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    left: 50%;
+    bottom: -15%;
+    transform: translate(-50%);
+    z-index: 1;
+    opacity: 0.07;
+
+}
+
+.title-section5 h2::after{
+    content: "";
+    position: absolute;
+    border: 1px solid black;
+    width: 5%;
+    height: 1px;
+    bottom:-20%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    transition: all 1s;
+}
+
+.title-section5 h2:hover::after{
+    width: 7%;
+}
+.title-section5 p{
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+
+
+.icon-contact{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.icon-details h5{
+transition: all 1s;
+}
+
+.icon-details:hover h5{
+    color: var(--main-color);
+    
+}
+
+.but2{
+    background-color: var(--main-color);
+    color: white;
+    border-color: transparent;
+    transition: all 1s;
+    
+}
+
+.but2:hover{
+    background-color: #f38383;
+}
+
+.form-control:focus{
+    border-color: var(--main-color) ;
+}
+
+/* strat footer */
+footer{
+    background-image: url(../images/images/dotted-map.png);
+    background-position: center;
+    background-size:contain;
+    background-color: #222;
+  
+}
+
+
+.icon-footer{
+    width:3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color:rgba(242, 84, 84, 0.5);
+    border-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:-5%;
+transition: all 1s;
+}
+
+.icon-footer a i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.icon-footer:hover{
+    background-color: var(--main-color);
+}
+
+.content-footer h3{
+    transition: all 1s;
+}
+
+ 
+.content-footer h3:hover{
+    color: var(--main-color) !important;
+}
+
+.content-footer a{
+    transition: all 1s;
+}
+
+ 
+.content-footer a:hover{
+    color: var(--main-color) !important;
+}
+
+
+.footer-icon a i{
+    transition: all 1s;
+}
+.footer-icon a i:hover{
+    color: var(--main-color) !important;
+}
+
+
+.footer-copyright{
+    background-color: #1a1a1a;
+}
+
+.footer-copyright a i{
+    transition: all 1s;
+}
+
+.footer-copyright a:hover i{
+    color: var(--main-color) !important;
+}
+
+.footer-copyright a {
+    transition: all 1s;
+}
+
+.footer-copyright a:hover{
+    color: var(--main-color) !important;
+}
+
+
+
+
+.footer-ancor{
+    width: 5rem;
+    height: 2.5rem;
+    border: 0.1rem solid #b0b0b0;
+    transition: all 1s;
+    border-radius: 2px;
+}
+
+.footer-ancor a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #b0b0b0;
+    transition: all 1s;
+}
+
+.footer-ancor:hover{
+    border-color: var(--main-color);
+}
+
+.footer-ancor:hover a{
+     color: var(--main-color)  ;
+}
+
